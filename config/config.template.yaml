@@ -1,0 +1,13 @@
+serverConfig:
+  port: ":8080"
+  baseURL: "http://localhost"
+routerConfig:
+  authURL: "http://localhost:8080/auth"
+  noAuthURL: "http://localhost:8080/noauth"
+twitchConfig:
+  clientID: "<ClientID>"
+  clientSecret: "<ClientSecret>"
+  redirectURL: "http://localhost:8080/redirect"
+  scopes:
+    - "user:read:follows"
+

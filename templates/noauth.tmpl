@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="window">
+    <div class="window-title-bar">
+        <div class="window-title">{{ .title }}</div>
+      <div class="window-controls">
+        <div class="window-control minimize"></div>
+        <div class="window-control maximize"></div>
+        <div class="window-control close"></div>
+      </div>
+    </div>
+    <div class="window-content">
+        <div class="text-container">
+          <p>Are you seeking <mark>new friends</mark> - someone with shared interests and a passion for Twitch? Look no further! Introducing our innovative service designed to connect you with like-minded individuals based on the Twitch channels you follow.</p>
+          <p>With just a click of a button, you can link your channel, and we'll take care of the rest. Our <mark>cutting-edge matching algorithm</mark> will analyze your Twitch channel preferences and identify potential friends who share your favorite broadcasters.</p>
+          <p>Engage in <mark>meaningful conversations</mark>, exchange tips and recommendations, and explore new Twitch channels with your newfound friends. Whether you're a seasoned Twitch aficionado or just starting your streaming journey, our service is here to connect you with individuals who understand your passion for gaming, creativity, and entertainment.</p>
+          <p>Join our community of Twitch enthusiasts today and embark on a journey to find <mark>genuine connections</mark>. Discover new friendships and create lasting bonds with individuals who share your love for Twitch.</p>
+          <p>Don't miss out on the opportunity to build meaningful relationships within the Twitch community. <mark>Click the link button</mark> now and let us help you find new friends!</p>
+        </div>
+        <form method="get" action="/auth">
+            <button type="submit" class="windows-button">LINK</button>
+        </form>
+    </div>
+  </div>
+</body>
+</html>

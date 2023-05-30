@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="window">
+    <div class="price-tag">BETA</div>
+    <div class="window-title-bar">
+        <div class="window-title">{{ .title }}</div>
+      <div class="window-controls">
+        <div class="window-control minimize"></div>
+        <div class="window-control maximize"></div>
+        <div class="window-control close"></div>
+      </div>
+    </div>
+    <div class="window-content">
+    {{ with .follows }}
+        <div class="container">
+          <h2 class="title">Searching for friends...</h2>
+          <div class="progress">
+            <div class="progress-bar">
+              <div class="progress-bar-blocks"></div>
+            </div>
+          </div>
+        </div>
+    {{ else }}
+        <div class="container">
+            <form method="get" action="/getFollows">
+                <button type="submit" class="windows-button">Get Follows</button>
+            </form>
+        </div>
+{{ end }}
+
+    </div>
+
+
+  </div>
+</body>
+</html>
