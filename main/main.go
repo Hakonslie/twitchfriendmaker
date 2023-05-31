@@ -53,6 +53,7 @@ func setupRouter(log logger.Logger, cfg *config.Config) *gin.Engine {
 	follows := follows.FollowStorage{}
 	router := gin.Default()
 	router.StaticFile("/styles.css", "../templates/styles.css")
+	router.Use(middleware.UseRateLimiterMiddleware())
 	router.Use(middleware.UseSessionMiddleware(&sessions))
 	router.Use(middleware.UseAuthMiddleware(cfg, &auth))
 
