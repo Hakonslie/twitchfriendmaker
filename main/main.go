@@ -11,13 +11,13 @@ import (
 	"syscall"
 
 	"github.com/gin-gonic/gin"
-	"go_project.com/m/auth"
-	"go_project.com/m/config"
-	"go_project.com/m/follows"
-	"go_project.com/m/handlers"
-	"go_project.com/m/logger"
-	"go_project.com/m/middleware"
-	"go_project.com/m/session"
+	"github.com/hakonslie/twitchfriendmaker/auth"
+	"github.com/hakonslie/twitchfriendmaker/config"
+	"github.com/hakonslie/twitchfriendmaker/follows"
+	"github.com/hakonslie/twitchfriendmaker/handlers"
+	"github.com/hakonslie/twitchfriendmaker/logger"
+	"github.com/hakonslie/twitchfriendmaker/middleware"
+	"github.com/hakonslie/twitchfriendmaker/session"
 )
 
 type keyValue struct {

@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"go_project.com/m/follows"
-	"go_project.com/m/logger"
-	"go_project.com/m/session"
+	"github.com/hakonslie/twitchfriendmaker/follows"
+	"github.com/hakonslie/twitchfriendmaker/logger"
+	"github.com/hakonslie/twitchfriendmaker/session"
 )
 
 func Index(follows follows.FollowStorage, log logger.Logger) gin.HandlerFunc {

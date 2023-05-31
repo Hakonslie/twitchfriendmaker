@@ -1,4 +1,4 @@
-module go_project.com/m
+module github.com/hakonslie/twitchfriendmaker
 
 go 1.20
 
