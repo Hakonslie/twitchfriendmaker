@@ -1,6 +1,6 @@
 package follows
 
-import "go_project.com/m/session"
+import "github.com/hakonslie/twitchfriendmaker/session"
 
 type Channel string
 

@@ -1,6 +1,6 @@
 package auth
 
-import "go_project.com/m/session"
+import "github.com/hakonslie/twitchfriendmaker/session"
 
 type TokenData struct {
 	AccessToken  string

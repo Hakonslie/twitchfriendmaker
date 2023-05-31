@@ -7,10 +7,10 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"go_project.com/m/auth"
-	"go_project.com/m/config"
-	"go_project.com/m/logger"
-	"go_project.com/m/session"
+	"github.com/hakonslie/twitchfriendmaker/auth"
+	"github.com/hakonslie/twitchfriendmaker/config"
+	"github.com/hakonslie/twitchfriendmaker/logger"
+	"github.com/hakonslie/twitchfriendmaker/session"
 )
 
 type TokenResponse struct {
